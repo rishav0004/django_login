@@ -1,0 +1,22 @@
+<html>
+    <form action="/sendmail" method="post">
+        {% csrf_token %}
+        <fieldset>
+            <legend>Send mail</legend>
+            
+            <label for="name">Name</label>
+            <input type="text" name = 'name' Required><br><hr>
+
+            <label for="subject">Subject</label>
+            <input type="text" name = 'subject' Required><br><hr>
+            
+            <label for="email">Email</label>
+            <input type="email" name = 'email' Required><br><hr> 
+            
+            <label for="message">Message</label>
+            <input type="text" name = 'message' Required><br><hr>       
+            
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</html>
